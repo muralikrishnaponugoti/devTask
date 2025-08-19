@@ -896,12 +896,13 @@ body{
     height:100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .prodCardContainer2{
     border:1px solid lightgrey;
     display: flex;
-    gap:0.3em;
+    gap:6em;
     height:16rem;
     padding:0.5em;
     min-width:50%;
@@ -909,8 +910,13 @@ body{
     background-color: white;
 }
 
+
+
 .prodCardContainer2>div:nth-child(1){
-    width:60%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:50%;
 }
 
 .prodCardContainer2>div:nth-child(2) {
@@ -918,6 +924,7 @@ body{
     height:95%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .prodCardContainer2>div:nth-child(2) img{
