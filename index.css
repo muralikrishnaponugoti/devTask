@@ -1,15 +1,19 @@
+html{
+    width:100vw;
+}
 body{
     overflow-x: hidden;
     margin:0px;
+    width:100%;
 }
 .headerSection{
     width:100vw;
-    height:3.7em;
+    height:61.68px;
 }
 
 .headSection{
     height:9%;
-    width: 100%;
+    width:95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +22,7 @@ body{
     z-index: 10;
     box-shadow: 0px 2px 2px -2px gray;
     background-color: white;
+    padding: 0px 40px 0px 40px;
 }
 
 .brandName{
@@ -33,16 +38,14 @@ body{
 
 .notifycons{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     gap:1em;
-    padding:1.5%;
+    width:8rem;
 }
 
 .nav-list{
     height: 2rem;
-    margin-top:5rem;
-    font-size: 85%;
-    font-weight: 900;
+    margin-top:5rem;       
     display: flex;
     overflow-x: scroll;
     padding-left: 1%;
@@ -63,6 +66,13 @@ body{
     border-radius: 2em;
 }
 
+.nav-list div span{
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+
 .nav-list div:hover{
     background-color: rgb(243, 244, 246);
 }
@@ -75,8 +85,10 @@ body{
 
 
 .heroSection{
-    width:100%;
+    width:99%;
     height:40rem;
+    padding-left: 3em;
+    padding-right: 1em;
     background-color: rgb(243, 244, 246);
     display: FLEX;
     justify-content: space-between;
@@ -95,6 +107,9 @@ body{
 }
 
 .safetyList ul li{
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     width:100%;
     color: rgb(209, 213, 219)!important;
     margin:1em 0px 1em 0px;
@@ -105,8 +120,10 @@ body{
 }
 
 .safetyDescContainer{
-    width:25%;
+    width:28%;
     text-overflow: wrap;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .safetyDescContainer button{
@@ -115,9 +132,13 @@ body{
     background-color: black;
     color:white;
     text-align: center;
-    width:30%;
+    width:fit-content;
     border-radius: 2em;
     align-items: center;
+    padding:12px 32px 12px 32px;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
 }
 
 .heroImgContainer img{
@@ -165,7 +186,7 @@ body{
 
 
 .offerProductsContainer{
-    padding:3%;
+    padding:3% 4rem 3% 5rem;
     width:100%;
     display: flex;
     gap:1em;
@@ -173,7 +194,8 @@ body{
 
 .offerDetailContainer{
     font-size: larger;
-    width:28%;
+    width:30%;
+    height:553.600px;
     height:fit-content;
     display:flex;
     flex-direction: column;
@@ -231,25 +253,35 @@ body{
     border:2px solid gray;
     border-radius: 50%;
     background-color: transparent;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    height:36.800px;
+    width: 36.800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nextBtn{
     width:80%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border: 2px solid gray;
     display: flex;
     align-items: center;
     background-color: black;
     border-radius: 2em;
     color:white;
-    font-size: larger;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
 
 }
 
 .offerProducts{
-    width:70%;
-    height:521px;
+    width: 60%;
+    height: 553.600px;
     padding-bottom: 2%;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -263,6 +295,7 @@ body{
     gap:1em;
 }
 
+/* -------------- product card -------------*/
 .offerProduct1{
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
@@ -325,24 +358,36 @@ body{
     height: 100%;
 }
 
+.detailsContainer{
+    padding:24px;
+}
+
 .detailsContainer h2{
     margin-bottom: 0%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 .detailsContainer p{
     margin-top:1%;
+    font-size: .875rem;
+    line-height: 1.25rem;
 }
 
 .ratings{
     display: flex;
     justify-content: baseline;
     align-items: center;
+    height:17px;
+    gap:.5rem;
+    width:265px;
 }
 
 .cardBtnsContainter{
     display: flex;
     justify-content: space-between;
-    margin-top:10%;
+    margin-top:5%;
 }
 
 .cardBtns{
@@ -357,6 +402,10 @@ body{
     border:2px solid gray;
     border-radius: 50%;
     background-color: transparent;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding:9%;
 
 }
 
@@ -367,6 +416,12 @@ body{
     border-radius: 2em;
     background-color: black;
     color:white;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    width: fit-content;
 }
 
 .discountRate{
@@ -381,7 +436,7 @@ body{
 
 .trustedCompSection{
     background-color:rgb(243, 244, 246) ;
-    width:100%;
+    width:101%;
     height:15rem;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -425,12 +480,13 @@ body{
     justify-content: center;
 }
 
-.categoryContainer h2{
+.categoryContainer>div h2{
+    font-weight: 700;
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
 
-.categoryContainer p{
+.categoryContainer>div p{
     color:orange;
 }
 
@@ -449,9 +505,17 @@ body{
 
 .categoryListContainer ul li{
     width:fit-content;
-    padding:0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
     border:2px solid gray;
-    border-radius: 0.8em;
+    border-radius: 0.5em;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1rem;
 }
 
 .categoryListContainer ul li:hover{
@@ -476,8 +540,7 @@ body{
 .topProductsSection{
     width:100%;
     height:fit-content;
-    padding-left: 2em;
-    padding-right: 1em;
+    padding:0px 40px 0px 40px;
 }
 
 .sectionHeadContainer{
@@ -485,19 +548,40 @@ body{
     justify-content: space-between;
 }
 
+.sectionHeadContainer>h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
 .filtersContainer{
+    width:20rem;
     display: flex;
     justify-content: center;
-    gap:0.5em;
+    align-items: center;
+    gap:0.8em;
 }
 
 .filtersContainer span{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2em;
     border:2px solid lightgray;
     border-radius: 0.4em;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    gap:0.2em;
+}
+
+.filtersContainer span:nth-child(1){
+    border:none !important;
+    width:64px;
+    height:22px;
+}
+
+.filtersContainer span:nth-child(2),.filtersContainer span:nth-child(3){
+    height: 2.25rem;
+    width: 2.25rem;
 }
 
 .filtersContainer span:hover{
@@ -557,7 +641,14 @@ body{
     justify-content: baseline;
     align-items: baseline;
     gap:1em;
+    margin-top: 1em;
 
+}
+
+.topHead>h1{
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
 
 .topHead>div{
@@ -569,9 +660,17 @@ body{
 }
 
 .topHead span{
+    border: 1px soid lightgray;
     background-color: white;
     padding:0.2em;
-    border-radius: 2em;
+    border-radius: 0.5em;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
 
 }
 
